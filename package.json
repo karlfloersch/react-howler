@@ -38,6 +38,11 @@
   "dependencies": {
     "howler": "git+https://github.com/goldfire/howler.js.git#v2.0.0-beta10"
   },
+  "standard": {
+    "ignore": [
+      "/lib/*"
+    ]
+  },
   "peerDependencies": {
     "react": "^0.14.0 || ^15.0.0-0"
   },
