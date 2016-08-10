@@ -80,7 +80,9 @@ class ReactHowler extends Component {
     const playing = this.howler.playing()
 
     if (!playing) {
+      const pos = this.howler.seek()
       this.howler.play()
+      this.howler.seek(pos)
     }
   }
 
