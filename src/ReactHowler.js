@@ -82,7 +82,9 @@ class ReactHowler extends Component {
     if (!playing) {
       const pos = this.howler.seek()
       this.howler.play()
-      this.howler.seek(pos)
+      if (this.howler.duration() !== 0) {
+        this.howler.seek(pos)
+      }
     }
   }
 
